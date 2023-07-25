@@ -3,9 +3,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-class CCE(nn.Module):
+class ECC(nn.Module):
     def __init__(self, device, balancing_factor=0.05):
-        super(CCE, self).__init__()
+        super(ECC, self).__init__()
         self.nll_loss = nn.NLLLoss()
         self.device = device # {'cpu', 'cuda:0', 'cuda:1', ...}
         self.balancing_factor = balancing_factor
