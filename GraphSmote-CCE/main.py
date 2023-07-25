@@ -10,9 +10,9 @@ import data_load
 import random
 import ipdb
 import copy
-from cce import CCE
+from ecc import ECC
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-loss_function = CCE(device=device)
+loss_function = ECC(device=device)
 
 from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
